@@ -1,0 +1,25 @@
+{
+    "name": "baijunyao/laravel-select2",
+    "description": "select2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "baijunyao",
+            "email": "baijunyao@baijunyao.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Baijunyao\\LaravelSelect2\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Baijunyao\\LaravelSelect2\\Select2ServiceProvider"
+            ]
+        }
+    }
+}
