@@ -18,8 +18,6 @@ class Select2ServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/resources/statics' => public_path('statics'),
         ], 'public');
-        $kernel = $this->app[Kernel::class];
-        $kernel->pushMiddleware(LaravelSelect2::class);
     }
 
     /**
