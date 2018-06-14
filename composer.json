@@ -9,7 +9,9 @@
             "email": "baijunyao@baijunyao.com"
         }
     ],
-    "require": {},
+    "require": {
+        "baijunyao/laravel-plugin-manager": "2.1.*"
+    },
     "autoload": {
         "psr-4": {
             "Baijunyao\\LaravelSelect2\\": "src/"
