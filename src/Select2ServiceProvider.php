@@ -23,22 +23,12 @@ class Select2ServiceProvider extends ServiceProvider
 
         // 定义 select2 css 标签
         Blade::directive('select2css', function () {
-            $select2CssPath = asset('statics/select2-4.0.4/css/select2.min.css');
-            $select2Css = <<<php
-<link href="$select2CssPath" rel="stylesheet" type="text/css" />
-php;
-            return $select2Css;
+            return select2_css();
         });
 
         // 定义 select2 js 标签
         Blade::directive('select2js', function () {
-            $select2JsPath = asset('statics/select2-4.0.4/js/select2.min.js');
-            $jquery = Jquery::unique();
-            $select2Js = <<<php
-$jquery
-<script src="$select2JsPath"></script>
-php;
-            return $select2Js;
+            return select2_js();
         });
     }
 
