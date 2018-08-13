@@ -16,9 +16,9 @@ $('.js-laravel-select2').select2({
     width: '100%'
 });
 php;
-        $this->cssFile('statics/select2-4.0.4/css/select2.min.css')
+        $this->cssFile('statics/laravel-select2/css/select2.min.css')
             ->jquery()
-            ->jsFile('statics/select2-4.0.4/js/select2.min.js')
+            ->jsFile('statics/laravel-select2/js/select2.min.js')
             ->jsContent($select2Js);
     }
 
